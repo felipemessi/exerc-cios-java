@@ -1,19 +1,7 @@
 package com.exercicio2;
 
 public class Invoice {
-	// TODO 
-	// [x] uma fatura deve incluir as seguintes informações como atributos:
-	// 		[x] o número do item faturado;
-	//	    [x] a descrição do item;
-	//	    [x] a quantidade comprada do item;
-	//	    [x] o preço unitário do item.
-	// [x] Sua classe deve ter um construtor que inicialize os quatro atributos. 
-	// [x] Se a quantidade não for positiva, ela deve ser configurada como 0. 
-	// [x] Forneça um método set e um método get() para cada variável de instância.
-	// [x] forneça um método chamado getInvoiceAmount() que calcula o valor da fatura
-	//		(isso é, multiplica a quantidade pelo preço por item) e depois retorna o 
-	//		valor como um double.
-	// [ ] Escreva um aplicativo de teste que demonstra as capacidades da classe Invoice.
+
 	private int numItem;
 	private String descricao;
 	private int quantidade;
