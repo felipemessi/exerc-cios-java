@@ -2,18 +2,6 @@ package com.exercicio3;
 
 public class Empregado {
 
-	// TODO Auto-generated method stub
-	// [x] que inclui as três informações a seguir como atributos:
-	// 		[x] um primeiro nome
-	//	    [x] um sobrenome; e
-	//	    [x] um salário mensal.
-	// [x] Sua classe deve ter um construtor que inicializa os três atributos. 
-	// [x] Forneça um método set() e get() para cada atributo.
-	// [x] Se o salário mensal não for positivo, configure-o como 0.0.
-	// [ ] Escreva um aplicativo de teste que demonstra as capacidades da classe.
-	// [x] Crie duas instâncias da classe e exiba o salário anual de cada instância
-	// [x] Então dê a cada empregado um aumento de 10% e exiba novamente o salário anual de cada empregado
-
 	private String nome;
 	private String sobrenome;
 	private double salario;

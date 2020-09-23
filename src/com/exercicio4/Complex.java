@@ -24,7 +24,7 @@ public class Complex {
 // GENERAL METHODS
 	
 	// Módulo
-	public double getModule() {
+	public double getModulo() {
 		return Math.hypot(real, imaginario);
 	}
 
@@ -67,7 +67,7 @@ public class Complex {
         double divideInvertido = real*real + imaginario*imaginario;
         return new Complex(real / divideInvertido, -imaginario / divideInvertido);
     }
-    // Divisao
+    // Divisão
     public Complex divisao(Complex b) {
         Complex a = this;
         return a.multiplicacao(b.divideInvertido());
@@ -100,12 +100,18 @@ public class Complex {
 	}
 	
 	
-	// Main
+//	MAIN
 	public static void main(String[] args) {
 		Complex x = new Complex(2,5);
 		Complex y = new Complex(1,-2);
-		Complex resultado = x.multiplicacao(y);
-		System.out.println(resultado.getReal());
-		System.out.println(resultado.getImaginario());
+		System.out.printf("\nNúmero real: %.2f",x.getReal());
+		System.out.printf("\nNúmero imaginário: %.2f",x.getImaginario());
+		System.out.printf("\nMódulo : %.2f", x.getModulo());
+		System.out.printf("\nÂngulo: %.1f º", x.getAngulo());
+		System.out.printf("\nInverso aditivo: " + x.getInversoAditivo());
+		System.out.printf("\nSoma dos complexos "+ x.toString() + " + " + y.toString() + " = " + x.soma(y));
+		System.out.printf("\nSubtracao dos complexos "+ x.toString() + " - " + y.toString() + " = " +x.subtracao(y));
+		System.out.printf("\nMultiplicacao dos complexos "+ x.toString() + " * " + y.toString() + " = " +x.multiplicacao(y));
+		System.out.printf("\nDivisao dos complexos "+ x.toString() + " / " + y.toString() + " ="  +x.divisao(y));
 	}
 }
